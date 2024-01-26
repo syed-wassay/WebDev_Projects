@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    scroll-behavior: auto;
+  }
+  
+  .flexContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .mainContent {
+    z-index: 0;
+    margin-top: 2%;
+    width: 70%;
+  }

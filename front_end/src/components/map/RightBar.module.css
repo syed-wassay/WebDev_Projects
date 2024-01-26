@@ -1,0 +1,138 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.rightBar {
+  width: 150%;
+
+}
+
+.drawButton{
+  display: flex;
+  justify-content: center;
+  
+}
+.saveButton{
+  margin-top: 3%;
+}
+.color{
+  max-height: 64.5vh;
+  overflow: auto;
+  margin-top: 10px
+}
+
+.card {
+  margin: 1.2% 0;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.topCard{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3%;
+  
+}
+
+.totalArea {
+  font-weight: bold;
+}
+
+.cost {
+  font-weight: bold;
+}
+
+.iconButton:hover {
+  color: red;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.nextButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.closeButton {
+
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .wrapper {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100 , 100, 100, 0.5);
+    top: 0;
+    left: 0;
+    justify-content: center;
+  }
+
+  .rightBar {
+    position: relative;
+    width: 400px;
+
+    background-color: #f2f2f2;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+.color{
+  max-height: 400px;
+  overflow-y: scroll;
+  margin: 10px;
+
+}
+.nextButtonContainer  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  align-items: center;
+  margin: 20px;
+  gap: 5px;
+  /* padding: 8px 120px;  ADDED ese he  */
+
+
+}
+.topCard{
+  height: 142px;
+  margin-bottom: 0%;
+  margin-top: -4px;
+}
+
+.closeButton {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+}
+
+.closeButton .MuiIconButton-root {
+  color: red;
+}
+
+}

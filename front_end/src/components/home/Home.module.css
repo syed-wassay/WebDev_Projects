@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageContainer {
+    text-align: center;
+    margin: 40px;
+  }
+
+  .buttonContainer {
+    bottom: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .imageContainer {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .buttonContainer {
+    bottom: 40px;
+  }
+
+  .buttonContainer Button {
+    font-size: 10px;
+    padding: 8px 12px;
+    margin-left: 10px;
+  }
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 180px;
+}
+
+.buttonContainer Button {
+  margin-right: 10px;
+}

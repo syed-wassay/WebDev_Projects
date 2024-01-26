@@ -1,0 +1,192 @@
+.wrapper {
+  display: flex;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 34px;
+  color: #3a88dc;
+  font-family: 'Arial', sans-serif;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.right, .left {
+  width: 70% ;
+  justify-content: center;
+}
+.left{
+  max-height: 315px;
+  margin-top: 10px;
+  margin-right: 340px;
+  margin-left: 25px;
+}
+
+.right{
+  margin-top: 10px;
+  margin-left: 340px;
+  text-align: end ;
+  margin-right: 25px;
+  
+}
+
+.textField {
+  width: 70%;
+  margin-bottom: 20px !important;
+}
+
+.datePickerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.datePickerLabel {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.MuiDatePicker-root {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sendButton {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+
+.rowContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: none;
+  max-width: 70%;
+}
+.recordTextField{
+  max-height: 210px;
+  max-width: 70%;
+  overflow-y: auto; 
+}
+
+.recordTextField {
+  max-height: 210px;
+  max-width: 70%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: none;
+  max-width: 90%;
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-size: 18px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) 
+{
+  .right{
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: end;
+    width: 70%;
+    margin-right: 20px;
+}
+.left{
+  max-height: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.datePickerContainer { 
+  gap: 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .right {
+    margin-left: 25px;
+    width: auto;
+    text-align: center;
+  }
+
+  .left {
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 25px;
+    width: auto;
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .recordTextField {
+    width: auto;
+    margin: auto;
+  }
+  .lastFields{
+    max-width: 100%;
+  }
+
+  .datePickerContainer {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .datePickerContainer .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 64%;
+  }
+
+  .input{
+    max-width: 100%
+  }
+
+  .sendButton{
+    margin: auto;
+  }
+}

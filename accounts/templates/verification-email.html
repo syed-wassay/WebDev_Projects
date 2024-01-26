@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Email</title>
+    <style>
+        /* Resets and Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 30px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px !important;
+        }
+
+        /* Image styling */
+        .card img {
+            max-width: 200px; /* Set maximum width for the image */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%; /* Display the image in a round shape */
+            overflow: hidden; /* Hide overflow for perfect circle */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: #007bff;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: transform 0.2s ease-in-out;
+            border: 2px solid #007bff;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.15) !important;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ email_title }}</h1>
+        <div class="content">
+            <div class="card">
+                <img src="cid:verification_image" alt="Logo" /> 
+                <p>Hello, {{ username }}!</p>
+                <p>{{ email_body }}</p>
+                <a href="{{ absurl }}" class="button">Open Map</a>
+                <p>If the button doesn't work, you can also use this link: <a href="{{ absurl }}">Click here</a></p>
+                <p>Thank you!</p>
+            </div>
+        </div>
+        <div class="footer">
+            This email was sent via MyCompany. &copy; 2023
+        </div>
+    </div>
+</body>
+</html>
